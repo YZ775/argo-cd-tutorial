@@ -23,8 +23,10 @@ spec:
       containers:
       - name: mysql
         image: mysql
-        environment:
-        MYSQL_DATABASE: testdb
-        MYSQL_ROOT_PASSWORD: test
+        env:
+          - name : MYSQL_DATABASE
+            value : testdb
+          - name : MYSQL_ROOT_PASSWORD
+            value : test
         ports:
         - containerPort: 3306
