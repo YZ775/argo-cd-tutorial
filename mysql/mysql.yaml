@@ -1,0 +1,27 @@
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: mysql
+  labels:
+    name: mysql
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mysql-deployment
+  namespace: mysql
+spec:
+  selector:
+    matchLabels:
+      app: mysql
+  replicas: 5
+  template:
+    metadata:
+      labels:
+        app: mysql
+    spec:
+      containers:
+      - name: mysql
+        image: mysql
+        ports:
+        - containerPort: 80
