@@ -4,7 +4,7 @@ metadata:
   name: nginx-app
 spec:
   destination:
-    namespace: default
+    namespace: nginx
     server: https://kubernetes.default.svc
   project: default
   source:
