@@ -11,6 +11,6 @@ spec:
   source:
     path: app
     repoURL: https://github.com/YZ775/argo-cd-tutorial.git
-    targetRevision: main
+    targetRevision: master
   syncPolicy:
     automated: {}
