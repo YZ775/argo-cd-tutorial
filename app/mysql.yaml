@@ -10,6 +10,6 @@ spec:
   source:
     path: mysql
     repoURL: https://github.com/YZ775/argo-cd-tutorial.git
-    targetRevision: master
+    targetRevision: main
   syncPolicy:
     automated: {}
